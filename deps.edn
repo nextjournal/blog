@@ -1,0 +1,13 @@
+{:paths ["src" "resources"]
+ :deps {io.github.nextjournal/clerk {:git/sha "fad499407d979916d21b33cc7e46e73f7a485e37"}
+        org.clojure/clojure {:mvn/version "1.11.1"}}
+
+ :aliases {:nextjournal/clerk {:extra-paths ["datasets"]
+                               :exec-fn nextjournal.clerk/build!
+                               :exec-args {:git/url "https://github.com/nextjournal/blog"
+                                           :ssr true
+                                           :compile-css true
+                                           :paths ["index.clj"
+                                                   "*.md"]}
+                               :main-opts ["-m" "babashka.cli.exec"]}
+           :dev {:extra-paths ["dev"]}}}
