@@ -1,5 +1,5 @@
 {:paths ["src" "resources"]
- :deps {io.github.nextjournal/clerk {:git/sha "fad499407d979916d21b33cc7e46e73f7a485e37"}
+ :deps {io.github.nextjournal/clerk {:git/sha "37608d13ebf0488e24b1967d1464bd183e6e168b"}
         org.clojure/clojure {:mvn/version "1.11.1"}}
 
  :aliases {:nextjournal/clerk {:extra-paths ["datasets"]
