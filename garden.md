@@ -5,7 +5,7 @@
   (:require [nextjournal.clerk :as clerk]))
 
 ```
-_Published Feburary 28, 2023 written by [Martin Kavalar](https://github.com/mk)_
+_Published March 1, 2023 written by [Martin Kavalar](https://github.com/mk)_
 
 Today we're launching Clerk Garden – a simple publishing service for Clerk notebooks.
 
