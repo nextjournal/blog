@@ -13,7 +13,7 @@
 (clerk/html
  [:div.text-center.italic.after:absolute.after:bottom-0.after:border-b-2.pb-4.mb-3
   {:class "-mt-10 after:content-[\"\"] after:left-1/2 after:w-[200px] after:-ml-[100px]"}
-  [:p "published March 1 2023, written by "
+  [:p "published March 2 2023, written by "
   [:a {:href "https://github.com/mk"} "Martin Kavalar"]]])
 ```
 
