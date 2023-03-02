@@ -3,7 +3,7 @@
 (ns nextjournal.blog.garden
   {:nextjournal.clerk/visibility {:code :hide}
    :nextjournal.clerk/open-graph
-   {:image "https://cdn.nextjournal.com/data/QmULas3tyt2XyBgtFz1oGK65CF9dRxB4Gaekrouj1edawY?filename=clerk-garden-og-image-2.png&content-type=image/png"}}
+   {:image "https://cdn.nextjournal.com/data/QmRp1QqcNLbXcazjNY4UnpYANCqsJxdDJZNcY8YpmVU1Kr?filename=clerk-garden-og-image-3.png&content-type=image/png"}}
   (:require [nextjournal.clerk :as clerk]))
 
 (clerk/html [:style "h1 { text-align: center; margin-bottom: 0; font-size: 3em !important;}"])
