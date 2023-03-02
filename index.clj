@@ -1,5 +1,6 @@
 (ns nextjournal.blog.index
-  {:nextjournal.clerk/visibility {:code :hide}}
+  {:nextjournal.clerk/visibility {:code :hide}
+   :nextjournal.clerk/open-graph {:image "https://cdn.nextjournal.com/data/QmPyuhrmAXxaTv7txqwMAHnJ3ALgx6iDeKtQFEQocRbB1i?filename=nj-blog-og-image.png&content-type=image/png"}}
   (:require [nextjournal.clerk :as clerk]
             [nextjournal.clerk.parser :as parser]))
 
