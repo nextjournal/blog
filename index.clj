@@ -1,9 +1,13 @@
-;; # The New Nextjournal Blog
 (ns nextjournal.blog.index
   {:nextjournal.clerk/visibility {:code :hide}}
   (:require [nextjournal.clerk :as clerk]
             [nextjournal.clerk.parser :as parser]))
 
+(clerk/html [:style "h1 { margin-bottom: 0; font-size: 2.6em !important;}
+h1 + p { font-size: 1.7em; position: relative; padding-bottom: 40px;}
+h1 + p:after { content: \"\"; position: absolute; left: 0; bottom: 0; border-bottom: 2px solid #ccc; width: 350px;"])
+
+;; # Welcome to the New Nextjournal Blog
 ;; Follow along with what’s going on at Nextjournal, and the topics we’re passionate about.
 
 {:nextjournal.clerk/visibility {:result :hide}}
