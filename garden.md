@@ -1,11 +1,21 @@
 # 🌱 Clerk Garden Blossoms
 ```clojure
 (ns nextjournal.blog.garden
-  {:nextjournal.clerk/visibility {:code :hide}}
+  {:nextjournal.clerk/visibility {:code :hide}
+   :nextjournal.clerk/open-graph
+   {:image "https://cdn.nextjournal.com/data/QmULas3tyt2XyBgtFz1oGK65CF9dRxB4Gaekrouj1edawY?filename=clerk-garden-og-image-2.png&content-type=image/png"}}
   (:require [nextjournal.clerk :as clerk]))
 
+(clerk/html [:style "h1 { text-align: center; margin-bottom: 0; font-size: 3em !important;}"])
 ```
-_Published March 1, 2023 written by [Martin Kavalar](https://github.com/mk)_
+
+```clojure
+(clerk/html
+ [:div.text-center.italic.after:absolute.after:bottom-0.after:border-b-2.pb-4.mb-3
+  {:class "-mt-10 after:content-[\"\"] after:left-1/2 after:w-[200px] after:-ml-[100px]"}
+  [:p "published March 1 2023, written by "
+  [:a {:href "https://github.com/mk"} "Martin Kavalar"]]])
+```
 
 Today we're launching Clerk Garden – a simple publishing service for Clerk notebooks.
 
